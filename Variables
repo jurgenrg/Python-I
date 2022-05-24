@@ -1,0 +1,71 @@
+# Variables & Expresions
+
+# A statement in Python is something that results or execution of a command Exsentially it does something. An expression however always results a value. An example of a type of expression are usual arithmetic operation like:
+
+5+5
+
+# Result 10
+
+
+
+# Print statements, assign statements are examples of statements:
+
+print('Hello')
+
+# Hello
+
+_____
+
+# Variables:
+
+# Earlier I learn about objects in Python. Variables are essentially a place to store diferent objects. Almost always, it's easier to work with diferent object types in Python by using Variables.
+
+# In Python we don't have to explicity declare or define a variable to create them. Infact, the variable is created in the same statement where we asign an object to the variable.
+
+# Assigment of variables in Python happens using the assigment operator ' = ' . 
+
+a = 50
+
+veggies = {'carrot', 'spinach', 'cucumber' }
+
+# Variable Naming rules:
+
+# - It is not allowed to start a variable name with a number or non alphabetical character, exept the ' _ '. (ex. 4Num or num-4 are illegal).
+
+# - The names chosen variables are case-sensitive. (num_1 is not the same variable as NUM-1)
+
+# - You are not alowed to use the so-called reserve words in Python.
+
+# False               def             if               raise            None              del
+
+# import           return       True         elif               in                   try
+
+# and                 else            is              while           as               except
+
+# lambda          with           assert       finally        nonlocal      yield
+
+# break             for              not             class           from            or
+
+# continue        global        pass
+
+
+
+# Do I actually store data inside the variables ?
+
+# Consider:
+
+x = 50
+
+y = 50
+
+# Now lets use the id() function to find out the memory addres of the variables x and y
+
+id(x),id(y)
+
+(140736768720192, 140736768720192)
+
+# They have the same id. The variables themselves donot have a location in the memory per se. Variables are simply pointers of references to objects that are actually present in memory. Since both the variables stored the same object 50, the id of both variables referred to the very same object.
+
+
+
+# If I change the value of x to 'Hello', and the value of y to '50,60,100', the object 50 as before, change to an Orphan Object.
